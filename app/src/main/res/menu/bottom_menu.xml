@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/estimate_tab"
+        app:showAsAction="always"
+        android:enabled="true"
+        android:icon="@drawable/ic_bus_station"
+        android:title="@string/estimate" />
+    <item
+        android:id="@+id/chatting_tab"
+        app:showAsAction="always"
+        android:enabled="true"
+        android:icon="@drawable/ic_rocketchat"
+        android:title="@string/chatting"/>
+
+    <item
+        android:id="@+id/home_tab"
+        app:showAsAction="always"
+        android:enabled="true"
+        android:icon="@drawable/ic_red_home"
+        android:title="@string/home">
+    </item>
+
+    <item
+        android:id="@+id/community_tab"
+        app:showAsAction="always"
+        android:enabled="true"
+        android:icon="@drawable/ic_people_online"
+        android:title="@string/community">
+    </item>
+
+
+    <item
+        android:id="@+id/setting_tab"
+        app:showAsAction="always"
+        android:enabled="true"
+        android:icon="@drawable/ic_settings"
+        android:title="@string/setting">
+    </item>
+
+</menu>

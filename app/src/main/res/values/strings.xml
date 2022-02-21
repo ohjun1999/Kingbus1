@@ -1,3 +1,34 @@
 <resources>
     <string name="app_name">Kingbus1</string>
+    <string name="firstEdit">아이디를 입력해주세요</string>
+    <string name="secondEdit">비밀번호를 입력해주세요</string>
+    <string name="name_company">킹버스</string>
+    <string name="estimate">견적</string>
+    <string name="chatting">채팅</string>
+    <string name="home">홈</string>
+    <string name="community">커뮤니티</string>
+    <string name="setting">설정</string>
+    <string name="main_top_top_text">세상 모든 교통을</string>
+    <string name="hyper_link_text">초연결</string>
+    <string name="main_major_text">출발지와 목적지를 입력해주세요.</string>
+    <string name="main_minor_text">정확한 위치를 입력해주세요.</string>
+    <string name="shuttle">셔틀</string>
+    <string name="round_trip">왕복</string>
+    <string name="one_way">편도</string>
+    <string name="start_location">출발지</string>
+    <string name="end_location">도착지</string>
+    <string name="main_start_edit_text">출발지를 입력해주세요.</string>
+    <string name="main_end_edit_text">도착지를 입력해주세요.</string>
+    <string name="login">로그인</string>
+    <string name="general_membership">일반회원</string>
+    <string name="personal_driver">개인기사</string>
+    <string name="corporation">법인회사</string>
+    <string name="not_membership">비회원</string>
+    <string name="sign_up">회원가입</string>
+    <string name="go_search_info">아이디/비밀번호 찾기 ></string>
+    <string name="please_enter_id">아이디를 입력해주세요</string>
+    <string name="please_enter_password">비밀번호를 입력해주세요</string>
+    <string name="please_enter_phone_number">휴대전화 번호를 입력해주세요</string>
+    <string name="receive_certification_number">인증번호 받기</string>
+
 </resources>

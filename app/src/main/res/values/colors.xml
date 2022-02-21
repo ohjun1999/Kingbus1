@@ -7,4 +7,14 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="kingred">#b00020</color>
+    <color name="kingorange">#e03d3d</color>
+    <color name="kingpink">#f8bebe</color>
+    <color name="gray">#5C5C5C</color>
+    <color name="fontgray">#7f7f7f</color>
+    <color name="textGray">#707070</color>
+    <color name="blue">#0000FF</color>
+    <color name="kingThickRed">#B00020</color>
+    //#F8BEBE 분홍색, #E03D3D 주황색, #F2F2F2 바탕회색, #7F7F7F 글자회색
 </resources>
+
