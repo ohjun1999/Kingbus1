@@ -30,5 +30,7 @@
     <string name="please_enter_password">비밀번호를 입력해주세요</string>
     <string name="please_enter_phone_number">휴대전화 번호를 입력해주세요</string>
     <string name="receive_certification_number">인증번호 받기</string>
+    <string name="selectRoute">노선선택</string>
+    <string name="select_date">날짜선택</string>
 
 </resources>

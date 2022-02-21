@@ -20,6 +20,7 @@
         android:id="@+id/home_tab"
         app:showAsAction="always"
         android:enabled="true"
+        android:iconTint="@color/kingThickRed"
         android:icon="@drawable/ic_red_home"
         android:title="@string/home">
     </item>
