@@ -98,6 +98,7 @@
                 android:background="@drawable/select_route_edit_back"
                 app:layout_constraintTop_toBottomOf="@id/selectRouteTitle">
 
+
                 <EditText
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -272,9 +273,9 @@
             android:layout_marginStart="50dp"
             android:layout_marginTop="20dp"
             android:layout_marginEnd="50dp"
-            android:paddingBottom="8dp"
-            android:paddingTop="8dp"
             android:background="@drawable/select_back"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
             app:layout_constraintEnd_toEndOf="@id/center"
             app:layout_constraintStart_toStartOf="@id/center"
             app:layout_constraintTop_toBottomOf="@id/selectDate">
@@ -314,15 +315,15 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="100dp"
             android:layout_marginEnd="100dp"
-            android:backgroundTint="@color/kingThickRed"
             android:background="@drawable/select_back"
-            android:textColor="@color/white"
+            android:backgroundTint="@color/kingThickRed"
             android:text="견적신청"
+            android:textColor="@color/white"
             android:textSize="20sp"
-            app:layout_constraintTop_toBottomOf="@id/selectPeople"
             app:layout_constraintBottom_toBottomOf="@id/center"
+            app:layout_constraintEnd_toEndOf="@id/center"
             app:layout_constraintStart_toStartOf="@id/center"
-            app:layout_constraintEnd_toEndOf="@id/center"/>
+            app:layout_constraintTop_toBottomOf="@id/selectPeople" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -335,9 +336,9 @@
         android:layout_alignParentBottom="true"
         android:paddingStart="30dp"
         android:paddingEnd="30dp"
-        app:labelVisibilityMode="labeled"
         app:itemIconTint="@drawable/bottom_menu_select_color"
         app:itemTextColor="@drawable/bottom_menu_select_color"
+        app:labelVisibilityMode="labeled"
         app:layout_constraintBottom_toBottomOf="parent"
         app:menu="@menu/bottom_menu" />
 

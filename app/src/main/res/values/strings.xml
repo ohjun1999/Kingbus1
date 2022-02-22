@@ -32,5 +32,10 @@
     <string name="receive_certification_number">인증번호 받기</string>
     <string name="selectRoute">노선선택</string>
     <string name="select_date">날짜선택</string>
+    <string name="general">일반</string>
+    <string name="company">회사</string>
+    <string name="driver">기사</string>
+    <string name="save_id">아이디 저장</string>
+    <string name="next">다음</string>
 
 </resources>
