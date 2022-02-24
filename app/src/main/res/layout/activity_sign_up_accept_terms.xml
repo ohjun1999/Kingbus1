@@ -6,15 +6,22 @@
     android:layout_height="match_parent">
 
 
+   <ScrollView
+       android:id="@+id/scrollView"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/all"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
     <include
         android:id="@+id/top"
         layout="@layout/item_top_bar" />
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        tools:ignore="ScrollViewCount">
 
         <TextView
             android:id="@+id/signUpTitle"
@@ -213,11 +220,14 @@
             android:textColor="@color/white"
             android:textSize="18sp"
             android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/privacyCheckBoxText" />
 
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
-    </ScrollView>
+   </ScrollView>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
