@@ -78,7 +78,7 @@
 
 
         <RadioButton
-            android:id="@+id/btnGeneral"
+            android:id="@+id/btnPassenger"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginStart="40dp"
@@ -89,7 +89,7 @@
             android:button="@null"
             android:paddingStart="20dp"
             android:paddingEnd="20dp"
-            android:text="일반 회원 가입"
+            android:text="승객 회원 가입"
             android:textAlignment="center"
             android:textColor="@drawable/login_select_text_color"
             android:textSize="18sp"

@@ -18,13 +18,20 @@
 
         <activity
             android:name=".LoginActivity"
-            android:exported="true">
+            android:exported="true"
+            android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SignUpTermsActivity"/>
+        <activity android:name=".SignUpTermsActivity" />
+        <activity android:name=".SignUpDriverInfoActivity" />
+        <activity android:name=".SignUpSelectActivity" />
+        <activity android:name=".SignUpCompanyInfoActivity" />
+        <activity android:name=".SignUpTermsCompanyActivity" />
+        <activity android:name=".SignUpPassengerInfoActivity" />
+        <activity android:name=".SignUpTermsPassengerActivity" />
 
     </application>
 
