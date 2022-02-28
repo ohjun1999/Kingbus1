@@ -34,5 +34,6 @@
         <activity android:name=".SignUpTermsPassengerActivity" />
 
     </application>
+    <uses-permission android:name="android.permission.INTERNET"/>
 
 </manifest>
