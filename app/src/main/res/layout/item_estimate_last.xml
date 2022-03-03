@@ -29,6 +29,7 @@
                 app:layout_constraintTop_toTopOf="@id/topConstraintLayout">
 
                 <TextView
+                    android:id="@+id/startDate"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -36,6 +37,7 @@
                     android:text="2022.02.09 (수) 10:30" />
 
                 <TextView
+                    android:id="@+id/endDate"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -77,6 +79,7 @@
                 app:layout_constraintTop_toBottomOf="@id/goStopLinearLayout">
 
                 <TextView
+                    android:id="@+id/startLocate"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -84,6 +87,7 @@
                     android:text="전라북도 군산시 의료원로 147" />
 
                 <TextView
+                    android:id="@+id/endLocate"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -179,6 +183,7 @@
                     android:textColor="@color/kingThickRed" />
 
                 <TextView
+                    android:id="@+id/NumOfPeople"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_marginStart="5dp"
@@ -198,6 +203,7 @@
                     android:textColor="@color/kingThickRed" />
 
                 <TextView
+                    android:id="@+id/purpose"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_marginStart="5dp"
@@ -210,6 +216,7 @@
                     android:src="@drawable/ic_person" />
 
                 <TextView
+                    android:id="@+id/withDriver"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_marginStart="5dp"
