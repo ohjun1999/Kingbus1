@@ -3,18 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/back"
-    tools:context=".MainActivity">
+    android:layout_height="match_parent">
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/selectDate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="50dp"
         android:background="@drawable/select_back"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -45,20 +40,16 @@
 
             <EditText
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="@drawable/select_route_edit_back"
+                android:backgroundTint="@color/white"
                 android:hint="출발일"
-                android:paddingTop="8dp"
-                android:paddingBottom="8dp"
                 android:textSize="15sp" />
 
             <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/select_route_edit_back"
-                android:paddingTop="8dp"
-                android:paddingBottom="7.5dp"
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:backgroundTint="@color/white"
                 android:src="@drawable/ic_calendar_alt" />
 
         </LinearLayout>

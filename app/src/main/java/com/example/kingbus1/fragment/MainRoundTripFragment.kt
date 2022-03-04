@@ -1,31 +1,39 @@
 package com.example.kingbus1.fragment
 
+import android.content.Context
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.kingbus1.R
-import com.example.kingbus1.databinding.FragmentMainOneWayBinding
+import com.example.kingbus1.MainActivity
+import com.example.kingbus1.databinding.FragmentMainRoundTripBinding
 
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
+
+var frontFragment = SelectDateFragment()
+var backFragment = MainOneWayFragment()
 
 
 class MainRoundTripFragment : Fragment() {
-
-    private var fragmentOneWayFragment = MainOneWayFragment()
-
-    private var _binding : FragmentMainOneWayBinding? = null
+    private var _binding: FragmentMainRoundTripBinding? = null
     private val binding get() = _binding!!
-
+    var mainActivity: MainActivity? = null
+    override fun onAttach(context: Context) {
+        super.onAttach(context)
+        mainActivity = context as MainActivity
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_main_round_trip, container, false)
+    ): View {
+        _binding = FragmentMainRoundTripBinding.inflate(inflater, container, false)
+        binding.btnRoundTrip.setOnClickListener {
+            mainActivity!!.openFragmentOnSelectDate(1)
+        }
+        binding.btnOneWay.setOnClickListener {
+            mainActivity!!.openFragmentOnSelectDate(2)
+        }
+        return binding.root
     }
-
 }
