@@ -21,19 +21,21 @@ class MainRoundTripFragment : Fragment() {
     override fun onAttach(context: Context) {
         super.onAttach(context)
         mainActivity = context as MainActivity
+
+
     }
 
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View {
-        _binding = FragmentMainRoundTripBinding.inflate(inflater, container, false)
-        binding.btnRoundTrip.setOnClickListener {
-            mainActivity!!.openFragmentOnSelectDate(1)
-        }
-        binding.btnOneWay.setOnClickListener {
-            mainActivity!!.openFragmentOnSelectDate(2)
-        }
-        return binding.root
-    }
+//    override fun onCreateView(
+//        inflater: LayoutInflater, container: ViewGroup?,
+//        savedInstanceState: Bundle?
+//    ): View {
+//        _binding = FragmentMainRoundTripBinding.inflate(inflater, container, false)
+//        binding.btnRoundTrip.setOnClickListener {
+//            mainActivity!!.openFragmentOnSelectDate(1)
+//        }
+//        binding.btnOneWay.setOnClickListener {
+//            mainActivity!!.openFragmentOnSelectDate(2)
+//        }
+//        return binding.root
+//    }
 }

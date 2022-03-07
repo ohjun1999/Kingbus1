@@ -18,6 +18,7 @@
     <color name="estimateGray">#636363</color>
     <color name="btnRed">#B80000</color>
     <color name="whiteGray">#F7F7F7</color>
-    //#F8BEBE 분홍색, #E03D3D 주황색, #F2F2F2 바탕회색, #7F7F7F 글자회색
+    <color name="backgroundGray">#F2F2F2</color>
+   //#F8BEBE 분홍색, #E03D3D 주황색, #F2F2F2 바탕회색, #7F7F7F 글자회색
 </resources>
 
