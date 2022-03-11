@@ -10,11 +10,11 @@ import com.example.kingbus1.ExtraActivity
 import com.example.kingbus1.R
 import com.example.kingbus1.databinding.FragmentMainRoundTripBinding
 
-class ExtraMainFragment : Fragment() {
+class SettingDriverProfileFragment : Fragment() {
 
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        val view = inflater.inflate(R.layout.fragment_extra_main, container, false)
+        val view = inflater.inflate(R.layout.fragment_setting_profile_driver, container, false)
 
         return view
 

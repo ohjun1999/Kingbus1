@@ -33,9 +33,11 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginTop="20dp"
+        android:paddingTop="2dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@id/goSearch"
-        android:background="@drawable/border_only_top"/>
+        android:background="@drawable/border_only_top"
+        tools:listitem="@layout/item_post_community"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:background="@drawable/border_top_bottom"
     android:padding="10dp">
 
 
@@ -18,32 +19,72 @@
 
     <TextView
         android:id="@+id/postId"
-        app:layout_constraintTop_toBottomOf="@id/postTitle"
-        app:layout_constraintStart_toStartOf="@id/postTitle"
-        android:text="최원빈"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:text="최원빈"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@id/postTitle"
+        app:layout_constraintTop_toBottomOf="@id/postTitle" />
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="· "
+        android:layout_marginStart="10dp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@id/postId"
+        app:layout_constraintTop_toBottomOf="@id/postTitle" />
+
 
     <TextView
         android:id="@+id/postDate"
-        android:text="20.11.22"
-        app:layout_constraintTop_toBottomOf="@id/postTitle"
-        app:layout_constraintStart_toEndOf="@id/postId"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:text="20.11.22"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@id/text1"
+        app:layout_constraintTop_toBottomOf="@id/postTitle" />
 
     <TextView
-        android:text="77"
-        app:layout_constraintTop_toBottomOf="@id/postTitle"
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="· 조회수 "
+        android:layout_marginStart="10dp"
+        android:textColor="@color/black"
         app:layout_constraintStart_toEndOf="@id/postDate"
+        app:layout_constraintTop_toBottomOf="@id/postTitle" />
+
+
+    <TextView
         android:id="@+id/postViews"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:text="77"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@id/text2"
+        app:layout_constraintTop_toBottomOf="@id/postTitle" />
+
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="· 추천수 "
+        android:layout_marginStart="10dp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@id/postViews"
+        app:layout_constraintTop_toBottomOf="@id/postTitle" />
 
     <TextView
         android:id="@+id/postRecommendation"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:text="3"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@id/text3"
+        app:layout_constraintTop_toBottomOf="@id/postTitle" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

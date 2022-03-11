@@ -12,13 +12,7 @@
         <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:windowSoftInputMode="adjustPan"
-            android:theme="@style/SplashTheme">
-
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            android:windowSoftInputMode="adjustPan">
 
 
         </activity>
@@ -28,15 +22,24 @@
             android:exported="true"
             android:theme="@style/SplashTheme">
 
+
+
         </activity>
         <activity
             android:name=".ExtraActivity"
             android:exported="true">
 
 
+            <intent-filter>f
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
 
 
         </activity>
+        <activity android:name=".WritePageActivity" />
+        <activity
+            android:name=".CommunityMainActivity"/>
         <activity android:name=".SignUpTermsActivity" />
         <activity android:name=".SignUpDriverInfoActivity" />
         <activity android:name=".SignUpSelectActivity" />
@@ -45,7 +48,8 @@
         <activity android:name=".SignUpPassengerInfoActivity" />
         <activity android:name=".SignUpTermsPassengerActivity" />
 
+
     </application>
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>
