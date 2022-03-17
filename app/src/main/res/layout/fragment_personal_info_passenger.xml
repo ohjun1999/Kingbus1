@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="8dp"
+    android:background="@color/backgroundGray"
+    tools:context=".PersonalInfoPassengerFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="개인정보"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="28sp"/>
+
+    <LinearLayout
+        android:id="@+id/changePasswordButton"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:padding="8dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/background_white_radius_all"
+        app:layout_constraintTop_toBottomOf="@id/title">
+
+        <ImageView
+            android:src="@drawable/ic_flip"
+            android:layout_marginStart="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+
+        <ImageView
+            android:src="@drawable/ic_rock"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:src= "@drawable/dotted_line_vertical"
+            android:layerType="software"
+            android:layout_width="150dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="30dp"
+            android:textColor="@color/black"
+            android:text="비밀번호
+            변경"/>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/changePhoneNumberButton"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:padding="8dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/background_white_radius_all"
+        app:layout_constraintTop_toBottomOf="@id/changePasswordButton">
+
+        <ImageView
+            android:src="@drawable/ic_flip"
+            android:layout_marginStart="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+
+        <ImageView
+            android:src="@drawable/ic_phone"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:src= "@drawable/dotted_line_vertical"
+            android:layerType="software"
+            android:layout_width="150dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="30dp"
+            android:textColor="@color/black"
+            android:text="전화번호
+            변경"/>
+
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
