@@ -8,276 +8,296 @@
     android:windowSoftInputMode="adjustPan">
 
 
-    <include
-        android:id="@+id/top"
-        layout="@layout/item_top_bar"
-        app:layout_constraintTop_toTopOf="parent" />
 
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/center"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@id/bottomMenu"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/top">
-
-
-        <RadioGroup
-            android:id="@+id/radioGroup"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:background="@drawable/radio_button_back"
-            android:checkedButton="@id/radioGroup"
-            android:elevation="20dp"
-            android:orientation="horizontal"
-            app:layout_constraintStart_toStartOf="@id/selectRoute"
-            app:layout_constraintTop_toTopOf="@id/center">
-
-
-            <RadioButton
-                android:id="@+id/btnRoundTrip"
-                android:layout_width="wrap_content"
-                android:layout_height="30dp"
-                android:background="@drawable/select_button_color"
-                android:button="@null"
-                android:checked="true"
-                android:paddingStart="30dp"
-                android:paddingEnd="30dp"
-                android:text="@string/round_trip"
-                android:textAlignment="center"
-                android:textColor="@drawable/select_text_color" />
-
-            <RadioButton
-                android:id="@+id/btnOneWay"
-                android:layout_width="wrap_content"
-                android:layout_height="30dp"
-                android:background="@drawable/select_button_color"
-                android:button="@null"
-                android:paddingStart="30dp"
-                android:paddingEnd="30dp"
-                android:text="@string/one_way"
-                android:textAlignment="center"
-                android:textColor="@drawable/select_text_color" />
-
-
-        </RadioGroup>
-
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/selectRoute"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="50dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="50dp"
-            android:background="@drawable/select_back"
-            app:layout_constraintEnd_toEndOf="@id/center"
-            app:layout_constraintStart_toStartOf="@id/center"
-            app:layout_constraintTop_toBottomOf="@id/radioGroup">
-
-            <TextView
-                android:id="@+id/selectRouteTitle"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:text="@string/selectRoute"
-                android:textColor="@color/black"
-                android:textSize="20sp"
-                app:layout_constraintEnd_toEndOf="@id/selectRoute"
-                app:layout_constraintStart_toStartOf="@id/selectRoute"
-                app:layout_constraintTop_toTopOf="@id/selectRoute" />
+            android:layout_height="match_parent">
 
 
-            <LinearLayout
-                android:id="@+id/selectRouteFirstEdit"
+            <include
+                android:id="@+id/top"
+                layout="@layout/item_top_bar"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/center"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="30dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="30dp"
-                android:background="@drawable/select_route_edit_back"
-                app:layout_constraintTop_toBottomOf="@id/selectRouteTitle">
+                android:layout_marginBottom="55dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/top">
 
 
-                <EditText
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:backgroundTint="@color/white"
-                    android:hint="@string/start_location"
-                    android:textSize="15sp" />
+                <RadioGroup
+                    android:id="@+id/radioGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/radio_button_back"
+                    android:checkedButton="@id/radioGroup"
+                    android:elevation="20dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintStart_toStartOf="@id/selectRoute"
+                    app:layout_constraintTop_toTopOf="@id/center">
 
-                <ImageButton
-                    android:layout_width="20dp"
-                    android:layout_height="match_parent"
-                    android:backgroundTint="@color/white"
-                    android:src="@drawable/ic_location_on" />
 
-            </LinearLayout>
+                    <RadioButton
+                        android:id="@+id/btnRoundTrip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:background="@drawable/select_button_color"
+                        android:button="@null"
+                        android:checked="true"
+                        android:paddingStart="30dp"
+                        android:paddingEnd="30dp"
+                        android:text="@string/round_trip"
+                        android:textAlignment="center"
+                        android:textColor="@drawable/select_text_color" />
 
-            <LinearLayout
-                android:id="@+id/selectRouteSecondEdit"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="30dp"
-                android:layout_marginTop="15dp"
-                android:layout_marginEnd="30dp"
-                android:background="@drawable/select_route_edit_back"
-                app:layout_constraintTop_toBottomOf="@id/selectRouteFirstEdit">
+                    <RadioButton
+                        android:id="@+id/btnOneWay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:background="@drawable/select_button_color"
+                        android:button="@null"
+                        android:paddingStart="30dp"
+                        android:paddingEnd="30dp"
+                        android:text="@string/one_way"
+                        android:textAlignment="center"
+                        android:textColor="@drawable/select_text_color" />
 
-                <EditText
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:backgroundTint="@color/white"
-                    android:hint="@string/end_location"
-                    android:textSize="15sp" />
 
-                <ImageButton
-                    android:layout_width="20dp"
-                    android:layout_height="match_parent"
-                    android:backgroundTint="@color/white"
-                    android:src="@drawable/ic_location_on" />
+                </RadioGroup>
 
-            </LinearLayout>
 
-            <FrameLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                app:layout_constraintTop_toBottomOf="@id/selectRouteSecondEdit"
-                tools:ignore="RtlSymmetry">
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/selectRoute"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="50dp"
+                    android:background="@drawable/select_back"
+                    app:layout_constraintEnd_toEndOf="@id/center"
+                    app:layout_constraintStart_toStartOf="@id/center"
+                    app:layout_constraintTop_toBottomOf="@id/radioGroup">
+
+                    <TextView
+                        android:id="@+id/selectRouteTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/selectRoute"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        app:layout_constraintEnd_toEndOf="@id/selectRoute"
+                        app:layout_constraintStart_toStartOf="@id/selectRoute"
+                        app:layout_constraintTop_toTopOf="@id/selectRoute" />
+
+
+                    <LinearLayout
+                        android:id="@+id/selectRouteFirstEdit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="30dp"
+                        android:background="@drawable/select_route_edit_back"
+                        app:layout_constraintTop_toBottomOf="@id/selectRouteTitle">
+
+
+                        <EditText
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:backgroundTint="@color/white"
+                            android:hint="@string/start_location"
+                            android:textSize="15sp" />
+
+                        <ImageButton
+                            android:layout_width="20dp"
+                            android:layout_height="match_parent"
+                            android:backgroundTint="@color/white"
+                            android:src="@drawable/ic_location_on" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/selectRouteSecondEdit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="30dp"
+                        android:background="@drawable/select_route_edit_back"
+                        app:layout_constraintTop_toBottomOf="@id/selectRouteFirstEdit">
+
+                        <EditText
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:backgroundTint="@color/white"
+                            android:hint="@string/end_location"
+                            android:textSize="15sp" />
+
+                        <ImageButton
+                            android:layout_width="20dp"
+                            android:layout_height="match_parent"
+                            android:backgroundTint="@color/white"
+                            android:src="@drawable/ic_location_on" />
+
+                    </LinearLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        app:layout_constraintTop_toBottomOf="@id/selectRouteSecondEdit"
+                        tools:ignore="RtlSymmetry">
+
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/minusButton"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/add_button_back"
+                            android:drawableRight="@drawable/ic_minus"
+                            android:drawablePadding="-100dp"
+                            android:gravity="center"
+                            android:paddingEnd="100dp"
+                            android:text="경유지 삭제"
+                            android:textColor="@color/white"
+                            app:layout_constraintTop_toBottomOf="@id/selectRouteSecondEdit"
+                            tools:ignore="RtlSymmetry" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/plusButton"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/add_button_back"
+                            android:drawableRight="@drawable/ic_plus"
+                            android:drawablePadding="-100dp"
+                            android:gravity="center"
+                            android:paddingEnd="100dp"
+                            android:text="경유지 추가"
+                            android:textColor="@color/white"
+                            app:layout_constraintTop_toBottomOf="@id/selectRouteSecondEdit"
+                            tools:ignore="RtlSymmetry" />
+
+                    </FrameLayout>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <FrameLayout
+                    android:id="@+id/selectDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="50dp"
+                    android:background="@drawable/select_back"
+                    app:layout_constraintEnd_toEndOf="@id/center"
+                    app:layout_constraintStart_toStartOf="@id/center"
+                    app:layout_constraintTop_toBottomOf="@id/selectRoute">
+
+
+                </FrameLayout>
+
+
+                <FrameLayout
+                    android:id="@+id/plusWayPoint"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="50dp"
+                    android:background="@drawable/select_back"
+                    app:layout_constraintEnd_toEndOf="@id/center"
+                    app:layout_constraintStart_toStartOf="@id/center"
+                    app:layout_constraintTop_toBottomOf="@id/selectDate" />
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/selectPeople"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="50dp"
+                    android:background="@drawable/select_back"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    app:layout_constraintEnd_toEndOf="@id/center"
+                    app:layout_constraintStart_toStartOf="@id/center"
+                    app:layout_constraintTop_toBottomOf="@id/plusWayPoint">
+
+                    <LinearLayout
+                        android:id="@+id/selectPeopleEdit"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginEnd="30dp"
+                        android:background="@drawable/select_route_edit_back"
+                        app:layout_constraintBottom_toBottomOf="@id/selectPeople">
+
+                        <EditText
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:backgroundTint="@color/white"
+                            android:hint="인원수"
+                            android:textSize="15sp" />
+
+                        <ImageButton
+                            android:layout_width="20dp"
+                            android:layout_height="match_parent"
+                            android:backgroundTint="@color/white"
+                            android:src="@drawable/ic_person" />
+
+                    </LinearLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
 
 
                 <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/minusButton"
+                    android:id="@+id/estimateApplyButton"
                     android:layout_width="match_parent"
-                    android:layout_height="40dp"
-                    android:layout_marginTop="20dp"
-                    android:background="@drawable/add_button_back"
-                    android:drawableRight="@drawable/ic_minus"
-                    android:drawablePadding="-100dp"
-                    android:gravity="center"
-                    android:paddingEnd="100dp"
-                    android:text="경유지 삭제"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="100dp"
+                    android:layout_marginEnd="100dp"
+                    android:background="@drawable/select_back"
+                    android:backgroundTint="@color/kingThickRed"
+                    android:text="견적신청"
                     android:textColor="@color/white"
-                    app:layout_constraintTop_toBottomOf="@id/selectRouteSecondEdit"
-                    tools:ignore="RtlSymmetry" />
-
-                <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/plusButton"
-                    android:layout_width="match_parent"
-                    android:layout_height="40dp"
+                    android:textSize="20sp"
                     android:layout_marginTop="20dp"
-                    android:background="@drawable/add_button_back"
-                    android:drawableRight="@drawable/ic_plus"
-                    android:drawablePadding="-100dp"
-                    android:gravity="center"
-                    android:paddingEnd="100dp"
-                    android:text="경유지 추가"
-                    android:textColor="@color/white"
-                    app:layout_constraintTop_toBottomOf="@id/selectRouteSecondEdit"
-                    tools:ignore="RtlSymmetry" />
+                    android:layout_marginBottom="20dp"
+                    app:layout_constraintBottom_toBottomOf="@id/center"
+                    app:layout_constraintEnd_toEndOf="@id/center"
+                    app:layout_constraintStart_toStartOf="@id/center"
+                    app:layout_constraintTop_toBottomOf="@id/selectPeople" />
 
-            </FrameLayout>
 
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-
-        <FrameLayout
-            android:id="@+id/selectDate"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="50dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="50dp"
-            android:background="@drawable/select_back"
-            app:layout_constraintEnd_toEndOf="@id/center"
-            app:layout_constraintStart_toStartOf="@id/center"
-            app:layout_constraintTop_toBottomOf="@id/selectRoute">
+    </ScrollView>
 
 
 
-
-        </FrameLayout>
-
-
-        <FrameLayout
-            android:id="@+id/plusWayPoint"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="50dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="50dp"
-            android:background="@drawable/select_back"
-            app:layout_constraintEnd_toEndOf="@id/center"
-            app:layout_constraintStart_toStartOf="@id/center"
-            app:layout_constraintTop_toBottomOf="@id/selectDate" />
-
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/selectPeople"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="50dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="50dp"
-            android:background="@drawable/select_back"
-            android:paddingTop="8dp"
-            android:paddingBottom="8dp"
-            app:layout_constraintEnd_toEndOf="@id/center"
-            app:layout_constraintStart_toStartOf="@id/center"
-            app:layout_constraintTop_toBottomOf="@id/plusWayPoint">
-
-            <LinearLayout
-                android:id="@+id/selectPeopleEdit"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginStart="30dp"
-                android:layout_marginEnd="30dp"
-                android:background="@drawable/select_route_edit_back"
-                app:layout_constraintBottom_toBottomOf="@id/selectPeople">
-
-                <EditText
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:backgroundTint="@color/white"
-                    android:hint="인원수"
-                    android:textSize="15sp" />
-
-                <ImageButton
-                    android:layout_width="20dp"
-                    android:layout_height="match_parent"
-                    android:backgroundTint="@color/white"
-                    android:src="@drawable/ic_person" />
-
-            </LinearLayout>
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/estimateApplyButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="100dp"
-            android:layout_marginEnd="100dp"
-            android:background="@drawable/select_back"
-            android:backgroundTint="@color/kingThickRed"
-            android:text="견적신청"
-            android:textColor="@color/white"
-            android:textSize="20sp"
-            app:layout_constraintBottom_toBottomOf="@id/center"
-            app:layout_constraintEnd_toEndOf="@id/center"
-            app:layout_constraintStart_toStartOf="@id/center"
-            app:layout_constraintTop_toBottomOf="@id/selectPeople" />
-
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
 
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
