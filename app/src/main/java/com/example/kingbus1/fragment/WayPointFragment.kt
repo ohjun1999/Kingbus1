@@ -25,12 +25,45 @@ class WayPointFragment : Fragment(R.layout.fragment_way_point) {
         val fragmentWayPointBinding = FragmentWayPointBinding.bind(view)
         binding = fragmentWayPointBinding
 
+        plusButton2.setOnClickListener {
+            childFragmentManager.beginTransaction()
+            switchFragment()
+
+        }
 
 
     }
 
+    var flag = 0
+
+    fun switchFragment() {
+        val transaction = childFragmentManager.beginTransaction()
+        when (flag) {
+
+            0 -> {
+                transaction.replace(R.id.plusFragment2, InWayPointFragment())
+                flag = 1
+            }
+
+            1 -> {
+                transaction.replace(R.id.plusFragment3, InWayPointFragment())
+                flag = 2
+            }
+            2 -> {
+                transaction.replace(R.id.plusFragment4, InWayPointFragment())
+                flag = 3
+            }
+            3 -> {
+                transaction.replace(R.id.plusFragment5, InWayPointFragment())
+            }
+        }
+        transaction.addToBackStack(null)
+        transaction.commit()
+    }
+
 
 }
+
 
 //    private fun goMyPost(){
 //        binding.boardMyPost.setOnClickListener {

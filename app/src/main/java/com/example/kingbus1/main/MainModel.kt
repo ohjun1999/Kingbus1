@@ -6,6 +6,7 @@ data class MainModel (
     val startDate: String,
     val endDate: String,
     val watPoint: String,
+    val countPeople: String
 
 
 )
