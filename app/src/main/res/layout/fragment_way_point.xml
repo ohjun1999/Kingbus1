@@ -5,6 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/selectDate"
@@ -32,7 +36,6 @@
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
             android:orientation="horizontal"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toBottomOf="@id/wayPointTitle">
 
 
@@ -75,15 +78,50 @@
         <FrameLayout
             android:id="@+id/plusFragment2"
             android:layout_width="0dp"
-            android:layout_height="0dp"
+            android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
             android:layout_marginTop="10dp"
             android:layout_marginEnd="30dp"
             android:layout_marginBottom="10dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintBottom_toTopOf="@id/plusButton2"
             app:layout_constraintTop_toBottomOf="@id/wayPointLinearLayout" />
+
+        <FrameLayout
+            android:id="@+id/plusFragment3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/plusFragment2" />
+
+        <FrameLayout
+            android:id="@+id/plusFragment4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/plusFragment3" />
+
+        <FrameLayout
+            android:id="@+id/plusFragment5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/plusFragment4" />
 
 
         <androidx.appcompat.widget.AppCompatButton
@@ -91,16 +129,17 @@
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:text="경유지 추가"
-            android:paddingEnd="155dp"
-            android:drawablePadding="-155dp"
+            android:drawablePadding="-100dp"
             android:gravity="center"
+            android:paddingEnd="100dp"
             android:textColor="@color/white"
             android:drawableRight="@drawable/ic_plus"
-            app:layout_constraintTop_toBottomOf="@id/plusFragment2"
+            app:layout_constraintTop_toBottomOf="@id/plusFragment5"
             android:background="@drawable/add_button_back"/>
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

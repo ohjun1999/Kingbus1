@@ -15,6 +15,13 @@
             android:windowSoftInputMode="adjustPan">
 
 
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+
+
         </activity>
 
         <activity
@@ -29,11 +36,6 @@
             android:name=".ExtraActivity"
             android:exported="true">
 
-
-            <intent-filter>f
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
 
 
         </activity>

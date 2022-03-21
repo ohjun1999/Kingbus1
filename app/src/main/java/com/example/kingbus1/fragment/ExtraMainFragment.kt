@@ -8,7 +8,6 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.kingbus1.ExtraActivity
 import com.example.kingbus1.R
-import com.example.kingbus1.databinding.FragmentMainRoundTripBinding
 
 class ExtraMainFragment : Fragment() {
 

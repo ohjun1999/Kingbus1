@@ -14,9 +14,6 @@
         app:layout_constraintTop_toTopOf="parent" />
 
 
-
-
-
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/center"
         android:layout_width="0dp"
@@ -147,20 +144,45 @@
 
             </LinearLayout>
 
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/plusButton"
+            <FrameLayout
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_marginTop="20dp"
-                android:background="@drawable/add_button_back"
-                android:drawableRight="@drawable/ic_plus"
-                android:drawablePadding="-100dp"
+                android:layout_height="wrap_content"
                 android:gravity="center"
-                android:paddingEnd="100dp"
-                android:text="경유지 추가"
-                android:textColor="@color/white"
                 app:layout_constraintTop_toBottomOf="@id/selectRouteSecondEdit"
-                tools:ignore="RtlSymmetry" />
+                tools:ignore="RtlSymmetry">
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/minusButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/add_button_back"
+                    android:drawableRight="@drawable/ic_minus"
+                    android:drawablePadding="-100dp"
+                    android:gravity="center"
+                    android:paddingEnd="100dp"
+                    android:text="경유지 삭제"
+                    android:textColor="@color/white"
+                    app:layout_constraintTop_toBottomOf="@id/selectRouteSecondEdit"
+                    tools:ignore="RtlSymmetry" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/plusButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/add_button_back"
+                    android:drawableRight="@drawable/ic_plus"
+                    android:drawablePadding="-100dp"
+                    android:gravity="center"
+                    android:paddingEnd="100dp"
+                    android:text="경유지 추가"
+                    android:textColor="@color/white"
+                    app:layout_constraintTop_toBottomOf="@id/selectRouteSecondEdit"
+                    tools:ignore="RtlSymmetry" />
+
+            </FrameLayout>
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -176,137 +198,9 @@
             android:background="@drawable/select_back"
             app:layout_constraintEnd_toEndOf="@id/center"
             app:layout_constraintStart_toStartOf="@id/center"
-            app:layout_constraintTop_toBottomOf="@id/selectRoute" >
+            app:layout_constraintTop_toBottomOf="@id/selectRoute">
 
 
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/selectDate1"
-                android:visibility="visible"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/select_back"
-                app:layout_constraintTop_toTopOf="parent">
-
-                <TextView
-                    android:id="@+id/selectDateTitle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:text="@string/select_date"
-                    android:textColor="@color/black"
-                    android:textSize="20sp"
-                    app:layout_constraintEnd_toEndOf="@id/selectDate1"
-                    app:layout_constraintStart_toStartOf="@id/selectDate1"
-                    app:layout_constraintTop_toTopOf="@id/selectDate1" />
-
-
-                <LinearLayout
-                    android:id="@+id/selectDateFirstEdit"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="30dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginEnd="30dp"
-                    android:background="@drawable/select_route_edit_back"
-                    app:layout_constraintTop_toBottomOf="@id/selectDateTitle">
-
-                    <EditText
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:backgroundTint="@color/white"
-                        android:hint="출발일"
-                        android:textSize="15sp" />
-
-                    <ImageButton
-                        android:layout_width="20dp"
-                        android:layout_height="match_parent"
-                        android:backgroundTint="@color/white"
-                        android:src="@drawable/ic_calendar_alt" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:id="@+id/selectDateSecondEdit"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="30dp"
-                    android:layout_marginTop="15dp"
-                    android:layout_marginEnd="30dp"
-                    android:layout_marginBottom="30dp"
-                    android:background="@drawable/select_route_edit_back"
-                    app:layout_constraintBottom_toBottomOf="@id/selectDate1"
-                    app:layout_constraintTop_toBottomOf="@id/selectDateFirstEdit">
-
-                    <EditText
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:backgroundTint="@color/white"
-                        android:hint="도착일"
-                        android:textSize="15sp" />
-
-                    <ImageButton
-                        android:layout_width="20dp"
-                        android:layout_height="match_parent"
-                        android:backgroundTint="@color/white"
-                        android:src="@drawable/ic_calendar_alt" />
-
-                </LinearLayout>
-
-
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/selectDate2"
-                android:visibility="invisible"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/select_back"
-                app:layout_constraintTop_toTopOf="parent">
-
-                <TextView
-                    android:id="@+id/selectDateTitle2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:text="@string/select_date"
-                    android:textColor="@color/black"
-                    android:textSize="20sp"
-                    app:layout_constraintEnd_toEndOf="@id/selectDate2"
-                    app:layout_constraintStart_toStartOf="@id/selectDate2"
-                    app:layout_constraintTop_toTopOf="@id/selectDate2" />
-
-
-                <LinearLayout
-                    android:id="@+id/selectDateFirstEdit2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="30dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginEnd="30dp"
-                    android:layout_marginBottom="10dp"
-                    android:background="@drawable/select_route_edit_back"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/selectDateTitle2">
-
-                    <EditText
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:backgroundTint="@color/white"
-                        android:hint="출발일"
-                        android:textSize="15sp" />
-
-                    <ImageButton
-                        android:layout_width="20dp"
-                        android:layout_height="match_parent"
-                        android:backgroundTint="@color/white"
-                        android:src="@drawable/ic_calendar_alt" />
-
-                </LinearLayout>
-
-            </androidx.constraintlayout.widget.ConstraintLayout>
 
 
         </FrameLayout>
@@ -322,7 +216,7 @@
             android:background="@drawable/select_back"
             app:layout_constraintEnd_toEndOf="@id/center"
             app:layout_constraintStart_toStartOf="@id/center"
-            app:layout_constraintTop_toBottomOf="@id/selectDate"/>
+            app:layout_constraintTop_toBottomOf="@id/selectDate" />
 
 
         <androidx.constraintlayout.widget.ConstraintLayout
