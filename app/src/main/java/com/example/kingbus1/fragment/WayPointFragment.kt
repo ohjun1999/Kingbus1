@@ -9,6 +9,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.FragmentHostCallback
 import com.example.kingbus1.R
 import com.example.kingbus1.databinding.FragmentWayPointBinding
+import kotlinx.android.synthetic.main.fragment_in_way_point.*
 import kotlinx.android.synthetic.main.fragment_way_point.*
 
 private const val ARG_PARAM1 = "param1"
@@ -60,6 +61,13 @@ class WayPointFragment : Fragment(R.layout.fragment_way_point) {
         transaction.addToBackStack(null)
         transaction.commit()
     }
+//    private fun removeFragment() {
+//        val transaction = childFragmentManager.beginTransaction()
+//        val frameLayout = childFragmentManager.findFragmentById(R.id.plusFragment2)
+//        transaction.remove(frameLayout!!)
+//        transaction.commit()
+//    }
+
 
 
 }

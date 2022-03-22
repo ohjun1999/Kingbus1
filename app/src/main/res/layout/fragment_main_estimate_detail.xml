@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/back"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -24,10 +26,11 @@
             android:text="버스를 구하시는 목적을 선택해주세요"
             android:textColor="@color/white" />
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatButton
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:textColor="@color/black"
+            android:backgroundTint="@color/white"
             android:gravity="center"
             android:textSize="18sp"
             android:text="선택" />
@@ -55,12 +58,13 @@
             android:text="버스를 구하시는 목적을 선택해주세요"
             android:textColor="@color/white" />
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatButton
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:textColor="@color/black"
             android:gravity="center"
             android:textSize="18sp"
+            android:backgroundTint="@color/white"
             android:text="선택" />
 
     </LinearLayout>
@@ -69,7 +73,7 @@
         android:layout_width="match_parent"
         android:layout_height="300dp"
         android:layout_marginTop="20dp"
-        android:hint="추가요청사항을 입력해주세요(선택 )"
+        android:hint="추가요청사항을 입력해주세요(선택)"
         app:layout_constraintTop_toBottomOf="@id/selectFacilities"
         android:background="@drawable/radius_solid_all_red"/>
 

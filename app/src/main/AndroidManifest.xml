@@ -42,6 +42,7 @@
         <activity android:name=".WritePageActivity" />
         <activity
             android:name=".CommunityMainActivity"/>
+        <activity android:name=".main.MainEstimateActivity"/>
         <activity android:name=".SignUpTermsActivity" />
         <activity android:name=".SignUpDriverInfoActivity" />
         <activity android:name=".SignUpSelectActivity" />

@@ -50,6 +50,7 @@
 
 
             <ImageButton
+                android:id="@+id/removeButton"
                 android:layout_width="45dp"
                 android:layout_height="match_parent"
                 android:background="@drawable/select_back"
